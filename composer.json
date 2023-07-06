@@ -14,6 +14,12 @@
         "php": ">=5.3"
     },
     "require-dev": {
-        "phpunit/phpunit": "~4.6 || ~5.0"
+        "ext-intl": "*",
+        "phpunit/phpunit": "^9.5",
+        "s9e/regexp-builder": "^2.0"
+    },
+    "scripts": {
+        "generate-regex": "php lib/php/utils/generateRegex.php",
+        "tests": "phpunit -c lib/php/phpunit.xml.dist"
     }
 }
